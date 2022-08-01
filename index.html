@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <title>Trailers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body class="no-scroll">
+    <div class="main-wrapp">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__left">
+                    <a class="logo" href="#">
+                        <img class="logo-img" src="./images/logo.svg" alt="Logo.">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <div class="header__right-top">
+                        <div class="header__right-top__logo">
+                            <a class="logo" href="#">
+                                <img class="logo-img" src="./images/logo.svg" alt="Logo.">
+                            </a>
+                        </div>
+                        <div class="header__topbar">
+                            <div class="header__topbar-lang t-uppercase skewed">
+                                <div class="header__topbar-lang__general">
+                                    <img src="./images/en-language.png" alt="USA flag.">
+                                    <span>en</span>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <div class="lang__dropdown">
+                                    <ul class="lang__dropdown-list">
+                                        <li class="lang__dropdown-item">
+                                            <a class="lang__dropdown-link active-lang" href="#">
+                                                <img src="./images/en-lang.png" alt="USA flag.">
+                                                English
+                                            </a>
+                                        </li>
+                                        <li class="lang__dropdown-item">
+                                            <a class="lang__dropdown-link" href="#">
+                                                <img src="./images/esp-lang.png" alt="Español flag.">
+                                                Español
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__topbar-locations">
+                                <div class="topbar__locations t-uppercase">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p class="topbar__locations-text">selected store:</p>
+                                    <a class="topbar__locations-location" href="#">Lavonia, GA</a>
+                                    <span class="topbar__locations-mobiletext">Directions</span>
+                                </div>
+                                <div class="topbar__locations-dropdown">
+                                    <div class="topbar__locations-dropdown__maps">
+                                        <a class="topbar__locations-dropdown__maps-title h4" href="#">Idaho Falls,
+                                            ID</a>
+                                        <a class="btn topbar__locations-dropdown__maps-btn" href="#">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            Go to Google Maps
+                                        </a>
+                                    </div>
+                                    <ul class="locations__dropdown-list">
+                                        <li class="locations__dropdown-item">
+                                            <div class="locations__dropdown-item__location">
+                                                Alabama
+                                            </div>
+                                            <div class="locations__dropdown-item__body">
+                                                <ul class="dropdown-item__body-list">
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>Leadsm AL</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="locations__dropdown-item open-location">
+                                            <div class="locations__dropdown-item__location">
+                                                Arizona
+                                            </div>
+                                            <div class="locations__dropdown-item__body active-location">
+                                                <ul class="dropdown-item__body-list">
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>Kingman, AZ</span>
+                                                    </li>
+                                                    <li class="dropdown-item__body-item active-location__link">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>Phoenix, AZ</span>
+                                                    </li>
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>Tucson, AZ</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="locations__dropdown-item">
+                                            <div class="locations__dropdown-item__location">
+                                                Alabama
+                                            </div>
+                                            <div class="locations__dropdown-item__body">
+                                                <ul class="dropdown-item__body-list">
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>Bryant, AR</span>
+                                                    </li>
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>Conway, AR</span>
+                                                    </li>
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>West Memphis, AR</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="locations__dropdown-item">
+                                            <div class="locations__dropdown-item__location">
+                                                Alabama
+                                            </div>
+                                            <div class="locations__dropdown-item__body">
+                                                <ul class="dropdown-item__body-list">
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>Bryant, AR</span>
+                                                    </li>
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>Conway, AR</span>
+                                                    </li>
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>West Memphis, AR</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="locations__dropdown-item">
+                                            <div class="locations__dropdown-item__location">
+                                                Alabama
+                                            </div>
+                                            <div class="locations__dropdown-item__body">
+                                                <ul class="dropdown-item__body-list">
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>Bryant, AR</span>
+                                                    </li>
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>Conway, AR</span>
+                                                    </li>
+                                                    <li class="dropdown-item__body-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span>West Memphis, AR</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__topbar-phone t-uppercase">
+                                <a class="header__topbar-phone__tel" href="tel:+1877-850-7587">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span class="header__topbar-phone__text">Call</span>
+                                    <span class="header__topbar-phone__number">877-850-7587</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__right-bottom">
+                        <div class="header__right-bottom__logo">
+                            <a class="logo" href="#">
+                                <img class="logo-img" src="./images/logo.svg" alt="Logo.">
+                            </a>
+                        </div>
+                        <div class="header__menu">
+                            <button class="header__menu-burger">
+                                <div class="burger-frist"></div>
+                                <div class="burger-second"></div>
+                                <div class="burger-third"></div>
+                            </button>
+                            <nav class="header__navigation">
+                                <ul class="header__menu-list t-uppercase">
+                                    <li class="header__menu-item hover-menu active-link">
+                                        <a class="header__menu-link" href="#">
+                                            <span>Search Trailers</span>
+                                            <i class="link__arrow-down"></i>
+                                        </a>
+                                        <div class="submenu">
+                                            <ul class="submenu__list">
+                                                <li class="submenu__item">
+                                                    <a class="submenu__link" href="#">
+                                                        <img src="./images/cargo-trailers.png" alt="Test.">
+                                                        <span>Enclosed Cargo Trailers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a class="submenu__link" href="#">
+                                                        <img src="./images/utility-trailers.png" alt="Test.">
+                                                        <span>Utility Trailers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a class="submenu__link" href="#">
+                                                        <img src="./images/dump-trailers.png" alt="Test.">
+                                                        <span>Dump Trailers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a class="submenu__link" href="#">
+                                                        <img src="./images/snowmobile-trailers.png" alt="Test.">
+                                                        <span>Snowmobile Trailers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a class="submenu__link" href="#">
+                                                        <img src="./images/atv-trailers.png" alt="Test.">
+                                                        <span>ATV Trailers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a class="submenu__link" href="#">
+                                                        <img src="./images/equipment-trailers.png" alt="Test.">
+                                                        <span>Equipment Trailers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a class="submenu__link" href="#">
+                                                        <img src="./images/car-hauler-trailers.png" alt="Test.">
+                                                        <span>Car Hauler Trailers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="submenu__item">
+                                                    <a class="submenu__link" href="#">
+                                                        <img src="./images/custom-trailers.png" alt="Test.">
+                                                        <span>Custom Trailers</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">
+                                            <span>Service</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">
+                                            <span>Parts & Accessories</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">
+                                            <span>Fleet Sales</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">
+                                            <span>Types of Trailers</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">
+                                            <span>Blog</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">
+                                            <span>Financing</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">
+                                            <span>Store Finder</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header__navigation-close t-uppercase">Close Menu</div>
+                            </nav>
+                            <div class="cart">
+                                <a class="cart__box" href="#">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span class="cart__items">1</span>
+                                </a>
+                                <div class="cart__dropdown">
+                                    <p class="cart__dropdown-successfull t-uppercase">Item successfully added</p>
+                                    <ul class="cart__dropdown-list">
+                                        <li>
+                                            <a class="cart__dropdown-item" href="#">
+                                                <div class="cart__item-images">
+                                                    <img class="cart__item-images__img" src="./images/cartitem.png"
+                                                        alt="Item.">
+                                                </div>
+                                                <div class="cart__item-info">
+                                                    <h5 class="cart-name">7 X 16 Victory Tandem Axle Cargo</h5>
+                                                    <div class="cart-category">TrailersPlus Lavonia</div>
+                                                    <span class="cart-price">$4599.00</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="cart__dropdown-buttons">
+                                        <a class="btn cart__dropdown-buttons-btn" href="#">Remove</a>
+                                        <a class="btn cart__dropdown-buttons-btn" href="#">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="header__navigation header__navigation-scroll">
+                    <ul class="header__menu-list t-uppercase">
+                        <li class="header__menu-item hover-menu active-link">
+                            <a class="header__menu-link" href="#">
+                                <span>Search Trailers</span>
+                                <i class="link__arrow-down"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul class="submenu__list">
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">
+                                            <img src="./images/cargo-trailers.png" alt="Test.">
+                                            <span>Enclosed Cargo Trailers</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">
+                                            <img src="./images/utility-trailers.png" alt="Test.">
+                                            <span>Utility Trailers</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">
+                                            <img src="./images/dump-trailers.png" alt="Test.">
+                                            <span>Dump Trailers</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">
+                                            <img src="./images/snowmobile-trailers.png" alt="Test.">
+                                            <span>Snowmobile Trailers</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">
+                                            <img src="./images/atv-trailers.png" alt="Test.">
+                                            <span>ATV Trailers</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">
+                                            <img src="./images/equipment-trailers.png" alt="Test.">
+                                            <span>Equipment Trailers</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">
+                                            <img src="./images/car-hauler-trailers.png" alt="Test.">
+                                            <span>Car Hauler Trailers</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">
+                                            <img src="./images/custom-trailers.png" alt="Test.">
+                                            <span>Custom Trailers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">
+                                <span>Service</span>
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">
+                                <span>Parts & Accessories</span>
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">
+                                <span>Fleet Sales</span>
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">
+                                <span>Types of Trailers</span>
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">
+                                <span>Financing</span>
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">
+                                <span>Store Finder</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/banner.png" alt="Banner.">
+                            <div class="swiper-slide__content">
+                                <h1 class="banner__headers h1">
+                                    Factory Direct to you for the BEST trailers at the BEST value
+                                    <span class="red-tag">GUARANTEED.</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/banner.png" alt="Banner.">
+                            <div class="swiper-slide__content">
+                                <h2 class="banner__headers h1">
+                                    Browse our inventory of over 100 trailers at each Trailersplus store.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/banner.png" alt="Banner.">
+                            <div class="swiper-slide__content">
+                                <h2 class="banner__headers h1">
+                                    Browse our inventory of over 100 trailers at each Trailersplus store.
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button swiper-button-prev"></div>
+                    <div class="swiper-button swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            
+            <section class="search-section">
+                <div class="container">
+                    <div class="search-box">
+                        <form class="search-form">
+                            <div class="search-form__options">
+                                <div class="search-form__filter">
+                                    <span class="search-form__filter-title h4 t-uppercase">Trailer type</span>
+                                    <div class="select-wrapper">
+                                        <div class="select">
+                                            <div class="select__trigger">
+                                                <div class="select__trigger-text">
+                                                    <i class="fas fa-caravan"></i>
+                                                    <span>All Types</span>
+                                                </div>
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="search-form__filter-select">
+                                                <span class="select-option selected" data-value="all">All Types</span>
+                                                <span class="select-option" data-value="cargo">Cargo</span>
+                                                <span class="select-option" data-value="utility">Utility</span>
+                                                <span class="select-option" data-value="dump">Dump</span>
+                                                <span class="select-option" data-value="equipment">Equipment</span>
+                                                <span class="select-option" data-value="car-hauler">Car Hauler</span>
+                                                <span class="select-option" data-value="snow-atv">Snow/ATV</span>
+                                                <span class="select-option" data-value="gooseneck">Gooseneck</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-form__filter">
+                                    <span class="search-form__filter-title h4 t-uppercase">Select a store</span>
+                                    <div class="select-wrapper">
+                                        <div class="select">
+                                            <div class="select__trigger">
+                                                <div class="select__trigger-text">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <span>Lavonia, GA</span>
+                                                </div>
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="search-form__filter-select">
+                                                <p class="select-option__title">Alabama</p>
+                                                <span class="select-option selected" data-value="leads-al">Leads,
+                                                    AL</span>
+                                                <p class="select-option__title">Arizona</p>
+                                                <span class="select-option" data-value="kingman-az">Kingman, AZ</span>
+                                                <span class="select-option" data-value="phoenix-az">Phoenix, AZ</span>
+                                                <span class="select-option" data-value="tucson-az">Tucson, AZ</span>
+                                                <p class="select-option__title">Arkansas</p>
+                                                <span class="select-option" data-value="bryant-ar">Bryant, AR</span>
+                                                <span class="select-option" data-value="conway-ar">Conway, AR</span>
+                                                <span class="select-option" data-value="west-memphis-ar">West Memphis,
+                                                    AR</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn search-form__btn t-uppercase" type="submit">
+                                Search trailers
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="info-section section-padding">
+                <div class="container">
+                    <div class="info-section__content t-center">
+                        <h2 class="info-section__content-title">TrailersPlus carries over <span
+                                class="red-tag hide-index">6700+</span> trailers nationwide in many styles and sizes.
+                        </h2>
+                        <p class="info-section__content-text">Whether for work or play, it's important you choose a
+                            trailer to accommodate all your hauling needs. Let us help you find the right trailer for
+                            the right price.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="category-section section-padding">
+                <div class="container">
+                    <div class="category-section__title">
+                        <h2 class="category-section__headers t-center">Browse By Category</h2>
+                    </div>
+                </div>
+                <div class="category-section__slider">
+                    <div class="category-swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p class="swiper-slide__title">Custom Trailers</p>
+                                <div class="swiper-slide__content">
+                                    <img class="swiper-slide__content-img"
+                                        src="./images/swipercategory/utility-trailers.png" alt="Utility Trailers.">
+                                    <a class="btn swiper-slide__content-btn t-uppercase" href="#">View Inventory</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="swiper-slide__title">Custom Trailers</p>
+                                <div class="swiper-slide__content">
+                                    <img class="swiper-slide__content-img"
+                                        src="./images/swipercategory/dump-trailers.png" alt="Dump Trailers.">
+                                    <a class="btn swiper-slide__content-btn t-uppercase" href="#">View Inventory</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="swiper-slide__title">Custom Trailers</p>
+                                <div class="swiper-slide__content">
+                                    <img class="swiper-slide__content-img"
+                                        src="./images/swipercategory/windy-trailers.png" alt="Windy trailer.">
+                                    <a class="btn swiper-slide__content-btn t-uppercase" href="#">View Inventory</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="swiper-slide__title">Custom Trailers</p>
+                                <div class="swiper-slide__content">
+                                    <img class="swiper-slide__content-img" src="./images/swipercategory/car-haulers.png"
+                                        alt="Car haulers.">
+                                    <a class="btn swiper-slide__content-btn t-uppercase" href="#">View Inventory</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="swiper-slide__title">Custom Trailers</p>
+                                <div class="swiper-slide__content">
+                                    <img class="swiper-slide__content-img"
+                                        src="./images/swipercategory/enclosed-cargo-trailers.png"
+                                        alt="Enclosed Cargo Trailers.">
+                                    <a class="btn swiper-slide__content-btn t-uppercase" href="#">View Inventory</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="swiper-slide__title">Custom Trailers</p>
+                                <div class="swiper-slide__content">
+                                    <img class="swiper-slide__content-img"
+                                        src="./images/swipercategory/custom-trailers.png" alt="Custom Trailers.">
+                                    <a class="btn swiper-slide__content-btn t-uppercase" href="#">View Inventory</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev prev-category"></div>
+                        <div class="swiper-button swiper-button-next next-category"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="satisfied-section section-padding">
+                <div class="container">
+                    <div class="satisfied-section__content">
+                        <h2 class="satisfied-section__content-title h1 t-center">We have more than <span
+                                class="red-tag">350,000</span> satisfied customers across the United States.</h2>
+                        <div class="satisfied-section__content-box">
+                            <p class="satisfied-section__content-text t-center">We proudly build every Interstate
+                                Trailer in Idaho, Arizona, Arkansas, or Virginia with 95% of trailer weight sourced from
+                                the USA.</p>
+                            <p class="satisfied-section__content-text t-center">Interstate Trailers are only available
+                                at factory owned TrailersPlus stores. This allows us to cut out the middleman and give
+                                you the highest quality trailer at the lowest possible price.</p>
+                        </div>
+                        <a class="btn satisfied-section__content-btn" href="#">Learn More</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="rating-section section-padding">
+                <div class="container">
+                    <div class="rating-section__content">
+                        <div class="rating-section__content-left">
+                            <h2 class="rating-section__content-left__title">Out customers love us!</h2>
+                            <div class="rating">
+                                <div class="rating__text">4.7</div>
+                                <div class="rating__stars-wrapper">
+                                    <div class="rating__stars">
+                                        <div class="rating__stars-star">
+                                            <i class="fa fa-star"></i>
+                                            <div class="rating__stars-star__fill">
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rating__stars">
+                                        <div class="rating__stars-star">
+                                            <i class="fa fa-star"></i>
+                                            <div class="rating__stars-star__fill">
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rating__stars">
+                                        <div class="rating__stars-star">
+                                            <i class="fa fa-star"></i>
+                                            <div class="rating__stars-star__fill">
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rating__stars">
+                                        <div class="rating__stars-star">
+                                            <i class="fa fa-star"></i>
+                                            <div class="rating__stars-star__fill" style="width: 70%">
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rating__stars">
+                                        <div class="rating__stars-star">
+                                            <i class="fa fa-star"></i>
+                                            <div class="rating__stars-star__fill" style="width: 0">
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rating-section__content-right">
+                            <p class="rating-section__content-right__text h2">
+                                We have over <span class="red-tag">10,000</span> reviews with a 4.7 / 5 avarage rating.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="reviews-section section-padding">
+                <div class="container">
+                    <div class="reviews-section__content">
+                        <h2 class="reviews-section__content-title t-center">Our Customers Said</h2>
+                    </div>
+                    <div class="reviews-section__slider">
+                        <div class="reviws-swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="review-block">
+                                        <div class="review-block__top">
+                                            <div class="review-block__top-rating">
+                                                <div class="rating__group">
+                                                    <span class="rating__group-star bg-1 checked"></span>
+                                                    <span class="rating__group-star"></span>
+                                                    <span class="rating__group-star"></span>
+                                                    <span class="rating__group-star"></span>
+                                                    <span class="rating__group-star"></span>
+                                                </div>
+                                            </div>
+                                            <span class="review-block__top-times">49 minutes ago</span>
+                                        </div>
+                                        <div class="review-block__bottom">
+                                            <p class="review-block__bottom-title">Well what can I say service was great…
+                                            </p>
+                                            <p class="review-block__bottom-text">Well what can I say service was great
+                                                like to haggle a little bit with him that was fun I had a very
+                                                professional attitude they were very knowledgeable and experienced… Read
+                                                More</p>
+                                            <span class="review-block__bottom-author">Henry West</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-block">
+                                        <div class="review-block__top">
+                                            <div class="review-block__top-rating">
+                                                <div class="rating__group">
+                                                    <span class="rating__group-star bg-2 checked"></span>
+                                                    <span class="rating__group-star bg-2 checked"></span>
+                                                    <span class="rating__group-star"></span>
+                                                    <span class="rating__group-star"></span>
+                                                    <span class="rating__group-star"></span>
+                                                </div>
+                                            </div>
+                                            <span class="review-block__top-times">5 hours ago</span>
+                                        </div>
+                                        <div class="review-block__bottom">
+                                            <p class="review-block__bottom-title">This is by far the best place to…</p>
+                                            <p class="review-block__bottom-text">This is by far the best place to
+                                                purchase a new trailer either enclosed or open. They have a wide variety
+                                                of lengths and widths. Randy is very knowledgeable, listens to what…
+                                                Read More</p>
+                                            <span class="review-block__bottom-author">Floyd Drake</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-block">
+                                        <div class="review-block__top">
+                                            <div class="review-block__top-rating">
+                                                <div class="rating__group">
+                                                    <span class="rating__group-star bg-3 checked"></span>
+                                                    <span class="rating__group-star bg-3 checked"></span>
+                                                    <span class="rating__group-star bg-3 checked"></span>
+                                                    <span class="rating__group-star"></span>
+                                                    <span class="rating__group-star"></span>
+                                                </div>
+                                            </div>
+                                            <span class="review-block__top-times">30 day ago</span>
+                                        </div>
+                                        <div class="review-block__bottom">
+                                            <p class="review-block__bottom-title">Well what can I say service was great…
+                                            </p>
+                                            <p class="review-block__bottom-text">Well what can I say service was great
+                                                like to haggle a little bit with him that was fun I had a very
+                                                professional attitude they were very knowledgeable and experienced… Read
+                                                More</p>
+                                            <span class="review-block__bottom-author">Alfred Keller</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-block">
+                                        <div class="review-block__top">
+                                            <div class="review-block__top-rating">
+                                                <div class="rating__group">
+                                                    <span class="rating__group-star bg-4 checked"></span>
+                                                    <span class="rating__group-star bg-4 checked"></span>
+                                                    <span class="rating__group-star bg-4 checked"></span>
+                                                    <span class="rating__group-star bg-4 checked"></span>
+                                                    <span class="rating__group-star"></span>
+                                                </div>
+                                            </div>
+                                            <span class="review-block__top-times">49 minutes ago</span>
+                                        </div>
+                                        <div class="review-block__bottom">
+                                            <p class="review-block__bottom-title">Well what can I say service was great…
+                                            </p>
+                                            <p class="review-block__bottom-text">This is by far the best place to
+                                                purchase a new trailer either enclosed or open. They have a wide variety
+                                                of lengths and widths. Randy is very knowledgeable, listens to what…
+                                                Read More</p>
+                                            <span class="review-block__bottom-author">Henry West</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-block">
+                                        <div class="review-block__top">
+                                            <div class="review-block__top-rating">
+                                                <div class="rating__group">
+                                                    <span class="rating__group-star bg-5 checked"></span>
+                                                    <span class="rating__group-star bg-5 checked"></span>
+                                                    <span class="rating__group-star bg-5 checked"></span>
+                                                    <span class="rating__group-star bg-5 checked"></span>
+                                                    <span class="rating__group-star bg-5 checked"></span>
+                                                </div>
+                                            </div>
+                                            <span class="review-block__top-times">49 minutes ago</span>
+                                        </div>
+                                        <div class="review-block__bottom">
+                                            <p class="review-block__bottom-title">Well what can I say service was great…
+                                            </p>
+                                            <p class="review-block__bottom-text">Well what can I say service was great
+                                                like to haggle a little bit with him that was fun I had a very
+                                                professional attitude they were very knowledgeable and experienced… Read
+                                                More</p>
+                                            <span class="review-block__bottom-author">Henry West</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-block">
+                                        <div class="review-block__top">
+                                            <div class="review-block__top-rating">
+                                                <div class="rating__group">
+                                                    <span class="rating__group-star bg-1 checked"></span>
+                                                    <span class="rating__group-star"></span>
+                                                    <span class="rating__group-star"></span>
+                                                    <span class="rating__group-star"></span>
+                                                    <span class="rating__group-star"></span>
+                                                </div>
+                                            </div>
+                                            <span class="review-block__top-times">49 minutes ago</span>
+                                        </div>
+                                        <div class="review-block__bottom">
+                                            <p class="review-block__bottom-title">Well what can I say service was great…
+                                            </p>
+                                            <p class="review-block__bottom-text">Well what can I say service was great
+                                                like to haggle a little bit with him that was fun I had a very
+                                                professional attitude they were very knowledgeable and experienced… Read
+                                                More</p>
+                                            <span class="review-block__bottom-author">Henry West</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button swiper-button-prev"></div>
+                            <div class="swiper-button swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="moreinfo-section section-padding">
+                <div class="container">
+                    <div class="moreinfo-section__content">
+                        <a class="moreinfo-section__link-left" href="#">
+                            <img class="moreinfo-section__link-img" src="./images/link-section-l.webp"
+                                alt="Background.">
+                            <div class="moreinfo-section__link-content">
+                                <p class="moreinfo-section__link-title h3">The Interstate Difference</p>
+                                <span class="moreinfo-section__link-text h5">Built Like a Tank. Built to Last</span>
+                            </div>
+                        </a>
+                        <a class="moreinfo-section__link-right" href="#">
+                            <img class="moreinfo-section__link-img" src="./images/link-section-r.webp"
+                                alt="Background.">
+                            <div class="moreinfo-section__link-content">
+                                <p class="moreinfo-section__link-title h3">Visit One of our 67 Locations</p>
+                                <span class="moreinfo-section__link-text h5">For Trailer Sales, Parts & Service</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="social-section section-padding">
+                <div class="container">
+                    <div class="social-section__content">
+                        <div class="social-section__content-left">
+                            <h2 class="social-section__content-title h2">Join The TrailersPlus Community</h2>
+                            <p class="social-section__content-text h4"> Stay Up to Date With the Latest and Greatest</p>
+                        </div>
+                        <div class="social-section__content-right">
+                            <ul class="social-section__content-list">
+                                <li class="social-section__content-item">
+                                    <a href="#" class="social-section__content-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="social-section__content-item">
+                                    <a href="#" class="social-section__content-link">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="social-section__content-item">
+                                    <a href="#" class="social-section__content-link">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="partners-section section-padding">
+                <div class="container">
+                    <div class="partners-section__content">
+                        <ul class="partners-section__content-list">
+                            <li class="partners-section__content-item">
+                                <img class="partners-section__content-img" src="./images/partners/logo-1.png"
+                                    alt="Logo.">
+                            </li>
+                            <li class="partners-section__content-item">
+                                <img class="partners-section__content-img" src="./images/partners/logo-2.png"
+                                    alt="Logo.">
+                            </li>
+                            <li class="partners-section__content-item">
+                                <img class="partners-section__content-img" src="./images/partners/logo-3.png"
+                                    alt="Logo.">
+                            </li>
+                            <li class="partners-section__content-item">
+                                <img class="partners-section__content-img" src="./images/partners/logo-4.png"
+                                    alt="Logo.">
+                            </li>
+                            <li class="partners-section__content-item">
+                                <img class="partners-section__content-img" src="./images/partners/logo-5.png"
+                                    alt="Logo.">
+                            </li>
+                            <li class="partners-section__content-item">
+                                <img class="partners-section__content-img" src="./images/partners/logo-6.png"
+                                    alt="Logo.">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__top-left">
+                        <a class="footer__top-left__logo" href="#">
+                            <img class="footer-logo" src="./images/logo.svg" alt="Logo.">
+                        </a>
+                        <p class="footer__top-left__text">Mauris non tempor quam, et lacinia sapien. Mauris accumsan
+                            eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipis.</p>
+                        <ul class="footer__contact">
+                            <li class="footer__contact-item">
+                                <a class="footer__contact-location" href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>3800 Airport Rd Nampa, <br> ID 83687</span>
+                                </a>
+                            </li>
+                            <li class="footer__contact-item">
+                                <a class="footer__contact-phone" href="tel:+1877-850-7587">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>877-850-7587</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer__top-left__pay">
+                            <li class="pay-item">
+                                <img src="./images/visa-icon.png" alt="Visa.">
+                            </li>
+                            <li class="pay-item">
+                                <img src="./images/master-card-icon.png" alt="MasterCard.">
+                            </li>
+                            <li class="pay-item">
+                                <img src="./images/american-card-icon.png" alt="American Bank.">
+                            </li>
+                            <li class="pay-item">
+                                <img src="./images/discover-icon.png" alt="Discover.">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-right">
+                        <div class="footer__nav">
+                            <div class="footer__nav-header">
+                                <p class="footer__nav-header__title h4">Company</p>
+                            </div>
+                            <div class="footer__nav-content">
+                                <ul class="footer__nav-content__list">
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">
+                                            Careers
+                                            <span class="red-tag">We're Hiring!</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Financing</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Warranty</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link active-f-link">Contact Us</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Community</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Trailer Knowledge</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Safety Inspection</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Reviews</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">About Us</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">FAQ</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Privacy Policy</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Returns Policy</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">California Supply Chain Act</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__nav">
+                            <div class="footer__nav-header">
+                                <p class="footer__nav-header__title h4">Our Locations</p>
+                            </div>
+                            <div class="footer__nav-content">
+                                <div class="footer__nav-content__list">
+                                    <div class="footer__nav-content__doublelist">
+                                        <ul class="footer__nav-content__list">
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Alabama</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Arizona</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Arkansas</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">California</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Colorado</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Georgia</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Idaho</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Indiana</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Iowa</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Kansas</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Kentucky</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Louisiana</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Minnesota</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Missouri</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="footer__nav-content__list">
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Montana</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Nebraska</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Nevada</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">New Mexico</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">North Carolina</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Ohio</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Oklahoma</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Oregon</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Tennessee</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Texas</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Utah</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Virginia</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">Washington</a>
+                                            </li>
+                                            <li class="footer__nav-content__item">
+                                                <a class="footer__nav-content__link" href="#">West Virginia</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__nav">
+                            <div class="footer__nav-header">
+                                <p class="footer__nav-header__title h4">Shop For</p>
+                            </div>
+                            <div class="footer__nav-content">
+                                <ul class="footer__nav-content__list">
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Cargo Trailers For Sale</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Utility Trailers For Sale</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Car Hauler Trailers For Sale</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Snow/ATV Trailers For Sale</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Dump Trailers For Sale</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Equipment Trailers For Sale</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Custom Trailers For Sale</a>
+                                    </li>
+                                    <li class="footer__nav-content__item">
+                                        <a href="#" class="footer__nav-content__link">Interstate Parts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__bottom-text t-center">All specifications and measurements are subject to change.
+                        Trailer dimensions, weights and measurements will vary due to manufacturing and production
+                        changes. Please verify the actual measurements of any unit prior to purchasing it. Each unit
+                        listed for sale is a specific unit at the specific location, subject to prior sale, all prices
+                        valid until 01/31/2020. The trailer photo displayed may be an example only. Pricing throughout
+                        the web site does not include any options that may have been installed at the dealership. For
+                        non-Oregon stores, cash price must be paid in cash, certified check, or debit card at the store.
+                        Please call or arrive in-store to have the cash price applied. Sale price reflects the price
+                        when paying with credit. For all Oregon stores, cash price and sale price are equal; paying with
+                        cash, certified check, debit card, or credit will receive the same price discounts. Please see
+                        the dealer for details. Some trailers shown with optional equipment. See the actual trailer for
+                        complete accuracy of features, options & pricing. The trailer pictures on this site may not
+                        match your vehicle exactly; however, it will match as closely as possible. Some trailer images
+                        shown are stock photos and may not reflect your exact choice of vehicle, color, trim and
+                        specification. Not responsible for pricing or typographical errors.</p>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <span class="footer__copyright-text t-center">Copyright © 2020 TrailersPlus All Rights Reserved.</span>
+            </div>
+        </footer>
+    </div>
+    
+    <a class="email-popup__trigger t-uppercase" id="email-popup__trigger" href="#">
+        <i class="fa fa-commenting"></i>
+        Email
+    </a>
+    <div class="email-popup">
+        <div class="email-popup__wrapper">
+            <div class="email-popup__top">
+                <svg class="email-popup__top-iconmail" viewBox="90 100 375 375">
+                    <g id="paper-plane-o">
+                        <path class="designstudio-icon" fill="#ffffff"
+                            d="M1764 1525q33 -24 27 -64l-256 -1536q-5 -29 -32 -45q-14 -8 -31 -8q-11 0 -24 5l-527 215l-298 -327q-18 -21 -47 -21q-14 0 -23 4q-19 7 -30 23.5t-11 36.5v452l-472 193q-37 14 -40 55q-3 39 32 59l1664 960q35 21 68 -2zM1422 26l221 1323l-1434 -827l336 -137 l863 639l-478 -797z"
+                            transform="scale(.17, -.17) translate(750, -2450)"></path>
+                    </g>
+                </svg>
+                <span>Contact Us</span>
+                <button class="email-popup__top-btn">
+                    <svg viewBox="90 100 375 375">
+                        <g id="close_thin">
+                            <path class="designstudio-icon" fill="#ffffff"
+                                d="M1778.3 76.8 1716.2 14.7 896.5 834.4 76.8 14.7 14.7 76.8 834.4 896.5 14.7 1716.2 76.8 1778.3 896.5 958.6 1716.2 1778.3 1778.3 1716.2 958.6 896.5z"
+                                transform="scale(.215, -.215) translate(400, -2300)"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="email-popup__main">
+                <form class="email-popup__main-form">
+                    <label for="name">
+                        Name
+                        <span>*</span>
+                    </label>
+                    <input type="text" name="name" id="email-name" placeholder="First & Last Name" required="true">
+                    <label for="email">
+                        Email
+                        <span>*</span>
+                    </label>
+                    <input type="text" name="email" id="email-mail" placeholder="Enter your email address"
+                        required="true">
+                    <label for="phone">
+                        Phone
+                        <span>*</span>
+                    </label>
+                    <input type="text" name="phone" id="email-phone" placeholder="Enter your phone number"
+                        required="false">
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" name="zip" id="email-zip" placeholder="Enter your ZIP Code" required="true">
+                    <label for="reason">
+                        Reason For Contact
+                        <span>*</span>
+                    </label>
+                    <select name="reason" id="email-reason" required="true">
+                        <option value selected="true" disabled="true">Select an item</option>
+                        <option value="sales">Sales</option>
+                        <option value="service-repairs">Service/Repairs</option>
+                        <option value="parts">Parts</option>
+                    </select>
+                    <label for="question">Your Question</label>
+                    <textarea name="question" id="email-question" placeholder="How can we help you today?"
+                        required="false"></textarea>
+                </form>
+            </div>
+            <div class="email-popup__bottom">
+                <img class="email-popup__bottom-logo" src="./images/popup-logo.png" alt="Logo.">
+                <input class="email-popup__bottom-submit" type="submit" value="EMAIL US">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4ee27036f4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script charset="utf-8" src="./js/script.min.js"></script>
+</body>
+</html>
